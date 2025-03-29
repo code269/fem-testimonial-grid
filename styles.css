@@ -1,8 +1,4 @@
-/* ### Font
-
-- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
-- Weights: 500, 600 */
-*/ :root {
+:root {
   --purple-50: hsl(260, 100%, 95%);
   --purple-300: hsl(264, 82%, 80%);
   --purple-500: hsl(263, 55%, 52%);
@@ -32,12 +28,96 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-.bold {
-  font-weight: 600;
+main {
+  margin: 5em 0;
+}
+
+.card {
+  margin: 3em;
+  padding: 3em;
+  border: 1px solid inherit;
+  border-radius: 10px;
+  box-shadow: 30px 30px 45px 10px rgba(207, 207, 207, 1);
+}
+
+.purple-bg {
+  color: var(--grey-100);
+  background-color: var(--purple-500);
+}
+
+.grey-bg {
+  color: var(--grey-100);
+  background-color: var(--grey-500);
+}
+
+.white-bg {
+  color: var(--grey-400);
+  background-color: var(--white);
+}
+
+.darkblue-bg {
+  color: var(--grey-100);
+  background-color: var(--dark-blue);
+}
+
+.card__profile {
+  display: flex;
+  align-items: center;
+  gap: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+.card__img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.border-purple-300 {
+  border: 2px solid var(--purple-300);
+}
+
+.border-purple-500 {
+  border: 2px solid var(--purple-500);
+}
+
+.card__name {
+  font-size: 1.1rem;
+  margin-bottom: 0.2em;
+}
+
+.card__title {
+  font-size: 0.9rem;
+}
+
+.card__testimonial {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+
+.card__quote {
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+.white {
+  color: var(--white);
+}
+
+.grey-200 {
+  color: var(--grey-200);
+}
+
+.grey-400 {
+  color: var(--grey-400);
+}
+
+.grey-500 {
+  color: var(--grey-500);
 }
 
 /* Footer */
 .attribution {
+  margin: 2em 0;
   font-size: 11px;
   text-align: center;
 }
