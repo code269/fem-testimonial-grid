@@ -28,14 +28,17 @@ body {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-main {
-  margin: 5em 0;
+.grid-container {
+  display: grid;
+  gap: 3em;
+  padding: 5em 3em;
 }
 
 .card {
-  margin: 3em;
+  margin: 0 auto;
   padding: 3em;
   border: 1px solid inherit;
+  max-width: 800px;
   border-radius: 10px;
   box-shadow: 30px 30px 45px 10px rgba(207, 207, 207, 1);
 }
@@ -123,4 +126,13 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .purple-bg {
+    background-color: var(--dark-blue);
+  }
+
+  .grid-container {
+  }
 }
