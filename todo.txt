@@ -5,12 +5,13 @@ Questions & Considerations:
 To-Do:
 
 - Tablet
-    - Add max-width at tablet size
     - [?] Should I start using grid at tablet size?
 
 - Desktop
     - Grid display
-    - Quotation mark image using position (likely)
+        - [New]
+        - Learn how to do it (properly) using areas
+        - Learn how to do it using row/column
 
 - Refractor
     - Am I overusing/underusing classes?

@@ -25,22 +25,52 @@ html {
 }
 
 body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .grid-container {
   display: grid;
-  gap: 3em;
+  gap: 2.5em;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
   padding: 5em 3em;
+  max-width: 1300px;
 }
 
 .card {
-  margin: 0 auto;
-  padding: 3em;
+  padding: 2.5em;
   border: 1px solid inherit;
-  max-width: 800px;
   border-radius: 10px;
-  box-shadow: 30px 30px 45px 10px rgba(207, 207, 207, 1);
+  box-shadow: 15px 15px 35px 0px rgba(207, 207, 207, 1);
+}
+
+.card:nth-child(1) {
+  grid-area: one;
+}
+
+.card:nth-child(2) {
+  grid-area: two;
+}
+
+.card:nth-child(3) {
+  grid-area: three;
+}
+
+.card:nth-child(4) {
+  grid-area: four;
+}
+
+.card:nth-child(5) {
+  grid-area: five;
 }
 
 .purple-bg {
@@ -118,7 +148,6 @@ body {
   color: var(--grey-500);
 }
 
-/* Footer */
 .attribution {
   margin: 2em 0;
   font-size: 11px;
@@ -128,11 +157,26 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-areas:
+      'one one'
+      'two three'
+      'five five'
+      'four four';
+  }
+}
+
 @media (min-width: 1024px) {
-  .purple-bg {
-    background-color: var(--dark-blue);
+  .grid-container {
+    grid-template-areas:
+      'one one two five'
+      'three four four five';
   }
 
-  .grid-container {
+  .purple-bg {
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 15%;
   }
 }
