@@ -48,7 +48,6 @@ body {
 
 .card {
   padding: 2.5em;
-  border: 1px solid inherit;
   border-radius: 10px;
   box-shadow: 15px 15px 35px 0px rgba(207, 207, 207, 1);
 }
@@ -132,27 +131,24 @@ body {
   line-height: 1.8rem;
 }
 
-.white {
+.text-white {
   color: var(--white);
 }
 
-.grey-200 {
+.text-grey-200 {
   color: var(--grey-200);
 }
 
-.grey-400 {
-  color: var(--grey-400);
-}
-
-.grey-500 {
+.text-grey-500 {
   color: var(--grey-500);
 }
 
 .attribution {
-  margin: 2em 0;
+  margin-bottom: 2em;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
